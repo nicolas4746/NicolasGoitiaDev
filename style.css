@@ -75,6 +75,8 @@ body {
     font-size: 1.5rem;
 }
 
+
+
 .about-section{
     width: 100%;
     height: auto;
@@ -85,6 +87,7 @@ body {
 }
 .about-photo{
     width: 33%;
+    min-width: 22rem;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -112,3 +115,32 @@ body {
 }
 
 
+.projects-section{
+    width: 100%;
+    background-color: var(--cyan);
+    display: flex;
+    padding: 4rem;
+}
+.projects-container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 30%;
+    height: auto;
+    background-color: var(--light-black);
+    border-radius: 2rem;
+}
+.projects-container img{
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.projects-container h3{
+    font-size:1.5rem;
+    color: white;
+    padding: 1rem;
+}
+.projects-container p{
+    font-size:1rem;
+    color: white;
+    padding:1rem;
+}
