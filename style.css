@@ -1,6 +1,7 @@
 :root{
     --light-black: #1d1813;
     --cyan: #339e96;
+    --dark-cyan:#334B49;
 }
 
 *{
@@ -129,12 +130,15 @@ body {
     height: auto;
     background-color: var(--light-black);
     border-radius: 2rem;
-
+    box-shadow: 10px 10px 5px var(--dark-cyan);
 }
 .projects-container img{
     width: 100%;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
+}
+.projects-container a{
+    text-decoration: none;
 }
 .projects-container h3{
     font-size:1.5rem;
