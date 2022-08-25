@@ -99,7 +99,7 @@ body {
     width: 60%;
     margin: 4rem 0;
     border-radius: 1.5rem;
-    box-shadow: -40px -40px 0px var(--light-black);
+    box-shadow: -40px -40px 10px ,40px 40px 10px var(--light-black);
 }
 .about-text-container{
     width:67%;
@@ -131,6 +131,7 @@ body {
     padding: 0 4rem 2rem 4rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .projects-section h2{
     text-align: center;
