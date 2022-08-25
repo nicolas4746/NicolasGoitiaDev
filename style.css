@@ -84,7 +84,8 @@ body {
     background-color:var(--cyan);
     display: flex;
     flex-direction: row;
-
+    /* background: rgb(29,24,19);
+    background: linear-gradient(0deg, rgba(29,24,19,1) 0%, rgba(51,158,150,1) 6%); */
 }
 .about-photo{
     width: 33%;
@@ -97,12 +98,14 @@ body {
     width: 60%;
     margin: 4rem 0;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 5px var(--light-black);
+    box-shadow: -40px -40px 0px var(--light-black);
 }
 .about-text-container{
     width:67%;
-    background-color: var(--light-black);
+    background-color: var(--cyan);
     padding:5rem;
+    /* background: rgb(29,24,19);
+    background: linear-gradient(0deg, rgba(29,24,19,1) 0%, rgba(51,158,150,1) 6%); */
 }
 .about-text-container h2{
     font-size:3rem;
@@ -119,9 +122,20 @@ body {
 .projects-section{
     width: 100%;
     background-color: var(--cyan);
+    border-top: 1px solid var(--light-black);
+    /* background: rgb(29,24,19);
+    background: linear-gradient(180deg, rgba(29,24,19,1) 0%, rgba(51,158,150,1) 4%); */
+}
+.projects-section div{
+    padding: 0 4rem 2rem 4rem;
     display: flex;
-    padding: 4rem;
     flex-wrap: wrap;
+}
+.projects-section h2{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    padding-top: 2rem;
 }
 .projects-container{
     width: 100%;
@@ -131,6 +145,7 @@ body {
     background-color: var(--light-black);
     border-radius: 2rem;
     box-shadow: 10px 10px 5px var(--dark-cyan);
+    border: 3px solid var(--light-black);
 }
 .projects-container img{
     width: 100%;
