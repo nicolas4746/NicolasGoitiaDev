@@ -39,6 +39,19 @@ body {
 .home-title-container h1{
     font-size:2.7rem;
     color: white;
+    animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
 }
 .home-title-container p {
     font-size:1.5rem;
@@ -80,8 +93,6 @@ body {
 
 
 
-
-
 .about-section{
     width: 100%;
     height: auto;
@@ -95,6 +106,9 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 3px solid black;
 }
 .about-photo img{
     width: 60%;
@@ -112,11 +126,13 @@ body {
     color: white;
     margin-bottom: 2rem;
     text-align: center;
+    text-shadow: 2px 2px 2px var(--dark-cyan);
 }
 .about-text-container p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
     margin-bottom: 0.5rem;
+    text-shadow: 1px 2px 2px var(--dark-cyan);
 }
 
 
@@ -139,6 +155,7 @@ body {
     font-size: 2rem;
     color: white;
     padding-top: 2rem;
+    text-shadow: 2px 2px 2px var(--dark-cyan);
 }
 .projects-container{
     width: 100%;
@@ -177,9 +194,12 @@ footer{
     background-color: var(--light-black);
     display: flex;
     align-items:center;
-    justify-content:space-around ;
+    justify-content:space-evenly ;
 }
 footer a{
     font-size: 2rem;
     color: white;
+}
+footer a:hover{
+    color: var(--cyan);
 }
