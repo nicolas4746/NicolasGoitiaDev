@@ -113,7 +113,7 @@ body {
 .about-photo img{
     width: 60%;
     margin: 4rem 0;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem 6rem 1.5rem 6rem;
     box-shadow: -40px -40px 10px ,40px 40px 10px var(--light-black);
 }
 .about-text-container{
@@ -122,14 +122,14 @@ body {
     padding: 0 2rem;
 }
 .about-text-container h2{
-    font-size:2rem;
+    font-size:2.3rem;
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
     text-shadow: 2px 2px 2px var(--dark-cyan);
 }
 .about-text-container p{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: white;
     margin-bottom: 0.5rem;
     text-shadow: 1px 2px 2px var(--dark-cyan);
@@ -152,7 +152,7 @@ body {
 }
 .projects-section h2{
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: white;
     padding-top: 2rem;
     text-shadow: 2px 2px 2px var(--dark-cyan);
