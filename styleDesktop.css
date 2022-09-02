@@ -24,8 +24,6 @@ body {
     min-width: 22rem;
     height: auto;
     background-color:var(--light-black);
-    /* background: rgb(29,24,19);
-    background: linear-gradient(0deg, rgba(29,24,19,1) 29%, rgba(51,158,150,1) 91%); */
     display: flex;
     align-items: flex-end;
 }
@@ -33,7 +31,6 @@ body {
     font-size:3rem;
     color: white;
     margin-bottom: 4rem;
-    
 }
 .home-title-container h1{
     font-size:5.5rem;
@@ -41,6 +38,7 @@ body {
     position: absolute;
     margin-top: 4rem;
     animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both;
+    text-shadow: 3px 3px 2px black; 
 }
 @keyframes tracking-in-expand {
     0% {
@@ -118,7 +116,7 @@ body {
 .about-photo img{
     width: 60%;
     margin: 4rem 0;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem 6rem 1.5rem 6rem;
     box-shadow: -40px -40px 10px ,40px 40px 10px var(--light-black);
 }
 .about-text-container{
@@ -147,10 +145,11 @@ body {
     border-top: 3px solid var(--light-black);
 }
 .projects-section div{
-    padding: 0 4rem 2rem 4rem;
+    padding: 0 4rem ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content:center;
 }
 .projects-section h2{
     text-align: center;
@@ -192,6 +191,20 @@ body {
     padding:1rem;
     text-align: center;
 }
+#hidden-projects{
+    display: none;
+}
+.projects-btn{
+    padding: 0.5rem 2rem;
+    background-color: #9febe5;
+    margin: 1rem 0;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 footer{
     width: 100%;
