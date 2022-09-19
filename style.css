@@ -80,8 +80,10 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0; 
+    border-bottom: 3px solid var(--dark-cyan);
+    opacity: 1;
 }
 nav a{
     text-decoration:none;
@@ -202,7 +204,6 @@ div.btn-projects-div a{
     font-weight: bold;
     cursor: pointer; 
     text-align: center;
-    position: relative;
 }
 div.btn-projects-div a:hover{
     outline: 2px solid white;
@@ -229,6 +230,7 @@ footer{
     display: flex;
     align-items:center;
     justify-content:space-evenly ;
+    border-top: 10px solid var(--dark-cyan);
 }
 footer a{
     font-size: 2rem;
