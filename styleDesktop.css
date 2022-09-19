@@ -76,23 +76,25 @@ body {
     background-position: center;
 }
 
-.home-img-container nav{
-    width: 100%;
+nav{
+    width: 67%;
     height:4rem;
     background-color: var(--cyan);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
 
-.home-img-container nav a{
+nav a{
     text-decoration:none;
     font-weight:400;
     color:white;
     border-radius:0.5rem;
     font-size: 1.5rem;
 }
-.home-img-container nav a:hover{ 
+nav a:hover{ 
     text-shadow: 2px 2px 2px #1c1c1c; 
 }
 
@@ -145,7 +147,7 @@ body {
     border-top: 3px solid var(--light-black);
 }
 .projects-section div{
-    padding: 0 4rem ;
+    padding: 0 3rem ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -182,14 +184,35 @@ body {
 .projects-container h3{
     font-size:1.5rem;
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
     text-align: center;
 }
 .projects-container p{
     font-size:1rem;
     color: white;
-    padding:1rem;
+    padding:0 1rem 0.5rem 1rem;
     text-align: center;
+}
+div.btn-projects-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:0;
+    justify-content:space-evenly;
+}
+div.btn-projects-div a{
+    padding: 0.5rem 1rem;
+    background-color: #9febe5;
+    margin: 10px 5px;
+    border-radius: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    cursor: pointer; 
+    text-align: center;
+    position: relative;
+}
+div.btn-projects-div a:hover{
+    outline: 2px solid white;
 }
 #hidden-projects{
     display: none;
@@ -203,6 +226,9 @@ body {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+}
+.projects-btn:hover{ 
+    box-shadow:  3px 3px 3px #1c1c1c;
 }
 
 
