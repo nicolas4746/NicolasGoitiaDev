@@ -123,10 +123,19 @@ nav a{
     margin-bottom: 0.5rem;
     text-shadow: 1px 2px 2px var(--dark-cyan);
 }
-
-
-
-
+.donwload-cv-btn{
+    padding: 0.5rem 2rem;
+    background-color: #9febe5;
+    margin: 1rem 0;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.donwload-cv-btn:hover{
+    box-shadow:  3px 3px 3px #1c1c1c;
+}
 
 .projects-section{
     width: 100%;
