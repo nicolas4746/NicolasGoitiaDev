@@ -2,6 +2,7 @@
     --light-black: #1d1813;
     --cyan: #339e96;
     --dark-cyan:#334B49;
+    --light-cyan:#9febe5;
 }
 
 *{
@@ -112,6 +113,8 @@ nav a:hover{
     background-color: var(--cyan);
     padding:5rem;
     border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
 }
 .about-text-container h2{
     font-size:3.5rem;
@@ -127,13 +130,15 @@ nav a:hover{
 }
 .donwload-cv-btn{
     padding: 0.5rem 2rem;
-    background-color: #9febe5;
+    background-color: var(--light-cyan);
     margin: 1rem 0;
     border: 1px solid black;
     border-radius: 0.8rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    width: fit-content;
+    align-self: center;
 }
 .donwload-cv-btn:hover{
     box-shadow:  3px 3px 3px #1c1c1c;
@@ -208,7 +213,7 @@ div.btn-projects-div{
 }
 div.btn-projects-div a{
     padding: 0.3rem 0.5rem;
-    background-color: #9febe5;
+    background-color: var(--light-cyan);
     margin: 10px 5px;
     border-radius: 0.8rem;
     font-size: 1.2rem;
@@ -225,7 +230,7 @@ div.btn-projects-div a:hover{
 }
 .projects-btn{
     padding: 0.5rem 2rem;
-    background-color: #9febe5;
+    background-color: var(--light-cyan);
     margin: 1rem 0;
     border: 1px solid black;
     border-radius: 0.8rem;
