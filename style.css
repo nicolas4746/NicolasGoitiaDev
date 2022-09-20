@@ -39,20 +39,8 @@ body {
 .home-title-container h1{
     font-size:2.7rem;
     color: white;
-    /* animation: tracking-in-expand 1.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.3s both; */
 }
-@keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-}
+
 .home-title-container p {
     font-size:1.5rem;
     background-color: var(--cyan);
@@ -179,7 +167,6 @@ nav a{
 .projects-container h3{
     font-size:1.5rem;
     color: white;
-    padding: 1rem 1rem 0.5rem 1rem;
     text-align: center;
 }
 .projects-container p{
@@ -200,10 +187,12 @@ div.btn-projects-div a{
     background-color: #9febe5;
     margin: 10px 5px;
     border-radius: 0.8rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer; 
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 div.btn-projects-div a:hover{
     outline: 2px solid white;
