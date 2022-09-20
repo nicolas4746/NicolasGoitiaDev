@@ -1,0 +1,245 @@
+:root{
+    --light-black: #1d1813;
+    --cyan: #339e96;
+    --dark-cyan:#334B49;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:62.5%;
+}
+
+.home-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.home-title-container{
+    width: 33%;
+    min-width: 22rem;
+    height: auto;
+    background-color:var(--light-black);
+    display: flex;
+    align-items: flex-end;
+}
+.home-title-container h2{
+    font-size:2.5rem;
+    color: white;
+}
+.home-title-container h1{
+    font-size:5rem;
+    color: white;
+}
+
+
+.home-title-container p {
+    font-size:2rem;
+    background-color: var(--cyan);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.text-container{
+    display:grid;
+    grid-template-rows: auto auto auto;
+    margin-left: 3rem;
+    margin-bottom: 8rem;
+}
+.home-img-container{
+    width: 67%;
+    height: auto;
+    background-image: url(./assets/tecladoInvertido.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    width: 100%;
+    height:4rem;
+    background-color: var(--cyan);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 3px solid var(--dark-cyan);
+}
+
+nav a{
+    text-decoration:none;
+    font-weight:400;
+    color:white;
+    border-radius:0.5rem;
+    font-size: 1.5rem;
+    transition: all .2s ease-in-out;
+}
+nav a:hover{ 
+    text-shadow: 2px 2px 2px #1c1c1c;
+    transform: scale(1.25);
+}
+
+
+.about-section{
+    width: 100%;
+    height: auto;
+    background-color:var(--cyan);
+    display: flex;
+    flex-direction: row;
+}
+.about-photo{
+    width: 33%;
+    min-width: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 3rem;
+    border-top: 3px solid black;
+}
+.about-photo img{
+    width: 60%;
+    margin: 4rem 0;
+    border-radius: 1.5rem 6rem 1.5rem 6rem;
+    box-shadow: -40px -40px 10px ,40px 40px 10px var(--light-black);
+}
+.about-text-container{
+    width:67%;
+    background-color: var(--cyan);
+    padding:5rem;
+    border-top: 3px solid black;
+}
+.about-text-container h2{
+    font-size:3.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px var(--dark-cyan);
+}
+.about-text-container p{
+    font-size: 2.1rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 2px 2px var(--dark-cyan);
+}
+
+
+.projects-section{
+    width: 100%;
+    background-color: var(--cyan);
+    border-top: 3px solid var(--light-black);
+}
+.projects-section div{
+    padding: 0 2rem ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+.projects-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    padding-top: 2rem;
+    text-shadow: 2px 2px 2px var(--dark-cyan);
+}
+.projects-container{
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 30%;
+    height: auto;
+    background-color: var(--light-black);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px var(--dark-cyan);
+    border: 3px solid var(--light-black);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.projects-container img{
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.projects-container a{
+    text-decoration: none;
+}
+.projects-container h3{
+    font-size:1.8rem;
+    color: white;
+    text-align: center;
+}
+.projects-container p{
+    font-size:1rem;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom:0.5rem ;
+}
+div.info-cards-container{
+    display:flex;
+    padding:1rem;
+    height: 100%;
+}
+div.btn-projects-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:0;
+    justify-content:space-evenly;
+    align-items:center;
+}
+div.btn-projects-div a{
+    padding: 0.3rem 0.5rem;
+    background-color: #9febe5;
+    margin: 10px 5px;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer; 
+    text-decoration: none;
+    color: black;
+}
+div.btn-projects-div a:hover{
+    outline: 2px solid white;
+}
+#hidden-projects{
+    display: none;
+}
+.projects-btn{
+    padding: 0.5rem 2rem;
+    background-color: #9febe5;
+    margin: 1rem 0;
+    border: 1px solid black;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.projects-btn:hover{ 
+    box-shadow:  3px 3px 3px #1c1c1c;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--light-black);
+    display: flex;
+    align-items:center;
+    justify-content:space-around ;
+    border-top: 10px solid var(--dark-cyan);
+}
+footer a{
+    font-size: 2.5rem;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+footer a:hover{
+    color: var(--cyan);
+    transform: scale(1.25);
+}
